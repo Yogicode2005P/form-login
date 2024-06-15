@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.container {
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: #f0f2f5;
+}
+.facebook-page{
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+.facebook-page .text{
+    margin-bottom: 90px;
+}
+.facebook-page h1{
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.facebook-page p{
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+
+form {
+    width: 100%;
+    max-width: 380px;
+    padding: 15px;
+    margin: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ input[type="email"],
+ input[type="password"],
+ button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+ }
+ 
+ button[type="submit"] {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ button[type="submit"]:hover {
+    background-color: #166fe5;
+ }
+ 
+ .forgot {
+    text-align: center;
+    margin-top: 12px;
+ }
+ 
+ .forgot a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+ }
+ 
+ .create-account {
+    text-align: center;
+    margin-top: 10px;
+ }
+ 
+ .create-account a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ 
+hr{
+    border: none;
+    height: 1px;
+    border-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.button{
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button a{
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.button a:hover{
+    background: #3ba626;
+}
+@media (max-width: 900px){
+    .facebook-page{
+        flex-direction: column;
+        text-align: center;
+    }
+    .facebook-page .text{
+        margin-bottom: 30px;
+    }
+}
